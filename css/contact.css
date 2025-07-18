@@ -208,8 +208,13 @@ MOBILE/BURGER CSS
     font-family: var(--primary-serif-font);
   }
 
+  .mobile-header a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+  }
+
   .title {
-    padding: 1.5vh 0 1.5vh 0;
+    padding: 1vh 0 1vh 0;
     border-bottom: 0.5px solid var(--primary-text-color);
   }
 
@@ -253,7 +258,8 @@ MOBILE/BURGER CSS
   .nav-links-text {
     font-size: 3.75rem;
     color: var(--primary-text-color);
-    font-family: var(--secondary-non-serif-font);
+    font-family: var(--primary-non-serif-font);
+    /* font-family: var(--secondary-non-serif-font); */
     /* color: #fff9e5; */
   }
 
