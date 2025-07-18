@@ -209,7 +209,7 @@ MOBILE/BURGER CSS
   }
 
   .title {
-    padding: 2vh 0 2vh 0;
+    padding: 1.5vh 0 1.5vh 0;
     border-bottom: 0.5px solid var(--primary-text-color);
   }
 
@@ -265,7 +265,7 @@ MOBILE/BURGER CSS
   .social {
     /* color: #fff9e5; */
     padding: 2% 0 5vh 0;
-    font-size: 1.75rem;
+    font-size: 3.75rem;
   }
 
   .nav-active {
