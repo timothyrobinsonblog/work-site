@@ -214,7 +214,7 @@ MOBILE/BURGER CSS
   }
 
   .title {
-    padding: 1vh 0 1vh 0;
+    padding: 1.5vh 0 1.5vh 0;
     border-bottom: 0.5px solid var(--primary-text-color);
   }
 
@@ -316,6 +316,7 @@ MOBILE/BURGER CSS
 
   .text {
     padding: 0 8% 0 8%;
+    font-size: 1.5rem;
   }
 }
 
