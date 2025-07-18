@@ -123,7 +123,8 @@ MOBILE/BURGER CSS
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: black;
+  background: var(--primary-text-color);
+  /* background-color: black; */
   margin: 5px;
   transition: all 0.3s ease-in;
 }
@@ -201,8 +202,10 @@ MOBILE/BURGER CSS
     display: flex;
     font-size: 1.625rem;
     justify-content: space-between;
-    border-bottom: 1px solid #000;
+    border-bottom: 0.5px solid var(--primary-text-color);
+    /* border-bottom: 1px solid #000; */
     padding-bottom: 5px;
+    font-family: var(--primary-serif-font);
   }
 
   .title {
@@ -225,7 +228,8 @@ MOBILE/BURGER CSS
     right: 0px;
     height: 100%;
     top: 0;
-    background-color: #a51f26;
+    background: var(--secondary-text-color);
+    /* background-color: #a51f26; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -233,16 +237,23 @@ MOBILE/BURGER CSS
     width: 100%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    opacity: 0.95;
+    /* opacity: 0.95; */
   }
 
   .nav-links li {
     opacity: 1;
+    border-bottom: none;
+  }
+
+  .nav-links li:first-of-type {
+    border-top: none;
   }
 
   .nav-links-text {
-    font-size: 1.75rem;
-    color: #fff9e5;
+    font-size: 3.75rem;
+    color: var(--primary-text-color);
+    font-family: var(--secondary-non-serif-font);
+    /* color: #fff9e5; */
   }
 
   #current-page {
@@ -251,7 +262,7 @@ MOBILE/BURGER CSS
   }
 
   .social {
-    color: #fff9e5;
+    /* color: #fff9e5; */
     padding: 2% 0 5vh 0;
     font-size: 1.75rem;
   }
@@ -262,7 +273,8 @@ MOBILE/BURGER CSS
 
   .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
-    background-color: #fff9e5;
+    background: var(--primary-text-color);
+    /* background-color: #fff9e5; */
   }
 
   .toggle .line2 {
@@ -271,7 +283,8 @@ MOBILE/BURGER CSS
 
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-    background-color: #fff9e5;
+    background: var(--primary-text-color);
+    /* background-color: #fff9e5; */
   }
 }
 
@@ -287,6 +300,7 @@ MOBILE/BURGER CSS
   .main-container {
     margin: 0;
     padding: 0;
+    text-align: left;
   }
 
   .title {
@@ -304,15 +318,14 @@ MOBILE/BURGER CSS
 /* 
 TO DO:    
 
-> BASICALLY: make writing page, write stuff, test. DONE!!
+> BASICALLY: write stuff, test. DONE!!
 
-- make copy of writing page, edit for tech projects
-    > copy wrtiing across:
-    > Tech: html css
+
 - push to GH
-- test on phone/tablet, make UI changes for phone, especially papers/tech pages
-- write proper stuff for site
 - get copies of 3 papers
+- test on phone/tablet, make UI changes for phone, especially papers/tech pages
+
+- write proper stuff for site
 - edit photo properly
 - test/changes.rtf file
 - GH push
@@ -330,6 +343,9 @@ DONE:
     > quick look at site in browser
 - push to GH
 - link to timothyrobinson.io
+- make copy of writing page, edit for tech projects
+    > copy wrtiing across:
+    > Tech: html css
     
 
 */
