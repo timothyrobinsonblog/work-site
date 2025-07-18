@@ -1,5 +1,24 @@
+/* __________________________________________________-\ variables & container: ________________________________________________________________________________________________________________________ */
+
+:root {
+  /* Colours: */
+  --primary-text-color: #7D8590;
+  --secondary-text-color: #0D1117;
+  /* Fonts: */
+  --primary-serif-font: Palatino;
+  /* --primary-serif-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  /* --primary-serif-font: Georgia; */
+  /* font-family: Garamond; */
+  /* font-family: Georgia, "Times New Roman", serif; */
+  --primary-non-serif-font: Helvetica;
+  --secondary-non-serif-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* --secondary-non-serif-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  --primary-monospace-font: 'Courier New', Courier, monospace;
+}
+
 html {
-  background: #fdf2e0;
+  background: #0D1117;
+  /* background: #fdf2e0; */
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -11,7 +30,9 @@ html {
   width: 100%;
   max-width: 1500px;
   margin-top: 5vh;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--primary-non-serif-font);
+  /* font-family: var(--primary-serif-font); */
+  color: var(--primary-text-color);
   display: flex;
 }
 
@@ -29,9 +50,15 @@ html {
 }
 
 .nav-logo {
-  /* Scalable with min size of 22px. Used to be 26px. */
-  font-size: calc(1.375rem + 0.2vw);
-  margin-bottom: 5vh;
+  font-family: var(--primary-serif-font);
+  font-size: calc(1.375rem + 0.2vw); /* Scalable with min size of 22px. Used to be 26px. */
+  margin-bottom: 7vh;
+  /* border-bottom: 0.5px solid var(--primary-text-color); */
+}
+
+.nav-logo a {
+  color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 ul {
@@ -42,30 +69,43 @@ ul {
 .nav-links li {
   list-style: none;
   padding: 1.5% 0 1.5% 0;
+  border-bottom: 0.5px solid var(--primary-text-color);
+}
+
+.nav-links li:first-of-type {
+  border-top: 0.5px solid var(--primary-text-color);
 }
 
 .nav-links-text {
-  color: black;
+  color: var(--primary-text-color);
+  /* color: black; */
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
+  /* font-size: 0.875rem; */
+  font-family: var(--primary-monospace-font);
+  /* font-family: var(--primary-serif-font); */
 }
 
 .nav-links-text:hover {
-  font-weight: bold;
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  /* font-weight: bold; */
 }
 
-#current-page {
+/* #current-page {
   border-bottom: 1px solid #000;
-  padding-bottom: 1px;
+  padding-bottom: 1px; 
 }
 
 #current-page:hover {
   font-weight: normal;
-}
+} */
 
 .social {
-  color: black;
-  padding-top: 8%;
+  color: var(--primary-text-color);
+  /* color: black; */
+  padding-top: 2vh;
+  font-size: 1.5rem;
 }
 
 /*==============================
@@ -97,77 +137,81 @@ MOBILE/BURGER CSS
 }
 
 .title {
-  font-size: 1.25rem;
-  margin-bottom: 3%;
+  font-size: 1.75rem;
+  /* font-size: 1.25rem; */
+  margin-bottom: 3vh;
+  border-bottom: 1px solid var(--primary-text-color);
+  /* border-bottom: 0.5px solid var(--primary-text-color); */
+  padding-bottom: 7px;
+  text-align: right;
+  /* font-family: var(--primary-non-serif-font); */
+  /* font-family: var(--primary-monospace-font); */
 }
 
 .text {
   width: 100%;
-  text-align: justify;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .essays {
   width: 100%;
-  margin-top: 4%;
-  display: grid;
-  grid-template-columns: 1.5fr 1.5fr 1.5fr;
-  grid-template-rows: auto;
-  grid-row-gap: 1%;
-  font-size: 1rem;
-  grid-template-areas:
-    "... 		   		analytic    	   ..."
-    "analytic-text 		analytic-text 	   analytic-text"
-    "... 				middlemarch  	   ..."
-    "middlemarch-text   middlemarch-text   middlemarch-text"
-    "... 				sartre  		   ..."
-    "sartre-text 		sartre-text 	   sartre-text";
+  margin-top: 4vh;
+  font-size: 1.1rem;
 }
 
-.essays img {
-  max-width: 100%;
-}
-
-.analytic {
-  grid-area: analytic;
-  text-align: center;
-}
-
-.middlemarch {
-  grid-area: middlemarch;
-  text-align: center;
-}
-
-.sartre {
-  grid-area: sartre;
-  text-align: center;
+.essay-section {
+  border-top: 0.5px solid var(--primary-text-color);
+  border-bottom: 0.5px solid var(--primary-text-color);
+  margin-bottom: 5px;
 }
 
 .essay-title {
-  text-align: center;
-  padding-bottom: 2%;
-  color: black;
-  text-decoration: none;
+  padding: 2.5vh 0 2vh 0;
   font-weight: bold;
+  text-align: right;
+  font-family: var(--primary-serif-font);
+  /* font-family: var(--secondary-non-serif-font); */
+  font-size: 1.35rem;
+  /* text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--primary-text-color) */
 }
 
-.essay-title:hover {
-  color: gray;
+.essay-title-styling {
+  font-size: 1.1rem;
 }
 
-.analytic-text {
-  grid-area: analytic-text;
-  padding: 0 10% 4% 10%;
+.essay-date {
+  text-align: right;
+  font-family: var(--primary-serif-font);
+  font-style: italic;
+  padding: 2vh 0 2.5vh 0;
 }
 
-.middlemarch-text {
-  grid-area: middlemarch-text;
-  padding: 0 10% 4% 10%;
+.essay-date-styling {
+  font-style: normal;
 }
 
-.sartre-text {
-  grid-area: sartre-text;
-  padding: 0 10% 5% 10%;
+.essay-section a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.essay-section a:hover {
+  color: #0D1117;
+}
+
+.essay-section:hover {
+  background-color: var(--primary-text-color);
+  cursor: grab;
+}
+
+.essay-section:hover .essay-summary { /* apply X to essay-summ. when hover over essay-sect. */
+  padding: 0 30px 0 30px;
+}
+
+.essay-summary { /* applied on hover */
+  transition: padding 0.25s ease;
 }
 
 /*==============================
@@ -215,34 +259,6 @@ MOBILE/BURGER CSS
     margin-top: 4%;
   }
 
-  .essays {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas:
-      "analytic  		   	"
-      "analytic-text 		"
-      "middlemarch 		"
-      "middlemarch-text   "
-      "sartre 			"
-      "sartre-text 		";
-  }
-
-  .essays img {
-    width: 60%;
-  }
-
-  .analytic {
-    padding: 0 20% 0 20%;
-  }
-
-  .middlemarch {
-    padding: 0 20% 0 20%;
-  }
-
-  .sartre {
-    padding: 0 20% 0 20%;
-  }
-
   /*==============================
   RESPONSIVE MOBILE/BURGER
 ==============================*/
@@ -286,8 +302,8 @@ MOBILE/BURGER CSS
 
   .social {
     color: #fff9e5;
-    font-size: 1.75rem;
     padding: 2% 0 5vh 0;
+    font-size: 1.75rem;
   }
 
   .nav-active {
@@ -331,16 +347,11 @@ MOBILE/BURGER CSS
     margin-top: 6%;
   }
 
-  .essays img {
-    width: 100%;
-  }
-
-  .middlemarch-text,
-  .analytic-text {
+  .essay-section-01, .essay-section-02 {
     padding: 0 8% 4% 8%;
   }
 
-  .sartre-text {
+  .essay-section-03 {
     padding: 0 8% 5% 8%;
   }
 }
