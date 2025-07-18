@@ -300,8 +300,7 @@ MOBILE/BURGER CSS
 ==============================*/
 @media screen and (max-width: 576px) {
   .container {
-    width: 100%;
-    /* width: 90%; */
+    width: 90%;
     margin-top: 4vh;
   }
 
@@ -314,11 +313,12 @@ MOBILE/BURGER CSS
   .title {
     text-align: center;
     font-family: var(--secondary-non-serif-font);
-    /* font-weight: bold; */
+    font-weight: bold;
   }
 
   .text {
-    padding: 0 8% 0 8%;
+    padding: 0;
+    /* padding: 0 8% 0 8%; */
     font-size: 1.5rem;
   }
 }
