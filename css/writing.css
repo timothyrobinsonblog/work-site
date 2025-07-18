@@ -144,8 +144,8 @@ MOBILE/BURGER CSS
   /* border-bottom: 0.5px solid var(--primary-text-color); */
   padding-bottom: 7px;
   text-align: right;
-  /* font-family: var(--primary-non-serif-font); */
   /* font-family: var(--primary-monospace-font); */
+  /* font-family: var(--primary-non-serif-font); */
 }
 
 .text {
@@ -169,9 +169,9 @@ MOBILE/BURGER CSS
   padding: 2.5vh 0 2vh 0;
   font-weight: bold;
   text-align: right;
-  font-family: var(--primary-serif-font);
-  /* font-family: var(--secondary-non-serif-font); */
-  font-size: 1.35rem;
+  font-family: var(--secondary-non-serif-font);
+  /* font-family: var(--primary-serif-font); */
+  font-size: 1.2rem;
   /* text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: var(--primary-text-color) */
