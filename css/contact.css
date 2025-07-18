@@ -312,11 +312,13 @@ MOBILE/BURGER CSS
 
   .title {
     text-align: center;
+    font-family: var(--secondary-non-serif-font);
+    font-weight: bold;
   }
 
   .text {
     padding: 0 8% 0 8%;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 
