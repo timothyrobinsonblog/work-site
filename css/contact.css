@@ -209,7 +209,8 @@ MOBILE/BURGER CSS
   }
 
   .title {
-    margin-top: 4%;
+    padding: 2vh 0 2vh 0;
+    border-bottom: 0.5px solid var(--primary-text-color);
   }
 
   /*==============================
