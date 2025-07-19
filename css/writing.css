@@ -123,7 +123,8 @@ MOBILE/BURGER CSS
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: black;
+  background: var(--primary-text-color);
+  /* background-color: black; */
   margin: 5px;
   transition: all 0.3s ease-in;
 }
@@ -144,8 +145,8 @@ MOBILE/BURGER CSS
   /* border-bottom: 0.5px solid var(--primary-text-color); */
   padding-bottom: 7px;
   text-align: right;
-  /* font-family: var(--primary-monospace-font); */
   /* font-family: var(--primary-non-serif-font); */
+  /* font-family: var(--primary-monospace-font); */
 }
 
 .text {
@@ -251,12 +252,20 @@ MOBILE/BURGER CSS
     display: flex;
     font-size: 1.625rem;
     justify-content: space-between;
-    border-bottom: 1px solid #000;
+    border-bottom: 0.5px solid var(--primary-text-color);
+    /* border-bottom: 1px solid #000; */
     padding-bottom: 5px;
+    font-family: var(--primary-serif-font);
+  }
+
+  .mobile-header a {
+    text-decoration: none;
+    color: var(--primary-text-color);
   }
 
   .title {
-    margin-top: 4%;
+    padding: 1.5vh 0 1.5vh 0;
+    border-bottom: 0.5px solid var(--primary-text-color);
   }
 
   /*==============================
@@ -275,7 +284,8 @@ MOBILE/BURGER CSS
     right: 0px;
     height: 100%;
     top: 0;
-    background-color: #a51f26;
+    background: var(--secondary-text-color);
+    /* background-color: #a51f26; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -283,16 +293,24 @@ MOBILE/BURGER CSS
     width: 100%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    opacity: 0.95;
+    /* opacity: 0.95; */
   }
 
   .nav-links li {
     opacity: 1;
+    border-bottom: none;
+  }
+
+  .nav-links li:first-of-type {
+    border-top: none;
   }
 
   .nav-links-text {
-    font-size: 1.75rem;
-    color: #fff9e5;
+    font-size: 3.75rem;
+    color: var(--primary-text-color);
+    font-family: var(--primary-non-serif-font);
+    /* font-family: var(--secondary-non-serif-font); */
+    /* color: #fff9e5; */
   }
 
   #current-page {
@@ -301,9 +319,9 @@ MOBILE/BURGER CSS
   }
 
   .social {
-    color: #fff9e5;
+    /* color: #fff9e5; */
     padding: 2% 0 5vh 0;
-    font-size: 1.75rem;
+    font-size: 3.75rem;
   }
 
   .nav-active {
@@ -312,7 +330,8 @@ MOBILE/BURGER CSS
 
   .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
-    background-color: #fff9e5;
+    background: var(--primary-text-color);
+    /* background-color: #fff9e5; */
   }
 
   .toggle .line2 {
@@ -321,7 +340,8 @@ MOBILE/BURGER CSS
 
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-    background-color: #fff9e5;
+    background: var(--primary-text-color);
+    /* background-color: #fff9e5; */
   }
 }
 
@@ -337,10 +357,19 @@ MOBILE/BURGER CSS
   .main-container {
     margin: 0;
     padding: 0;
+    text-align: left;
   }
 
   .title {
     text-align: center;
+    font-family: var(--secondary-non-serif-font);
+    font-weight: bold;
+  }
+
+  .text, .essays {
+    padding: 0;
+    /* padding: 0 8% 0 8%; */
+    font-size: 1.5rem;
   }
 
   .essays {
