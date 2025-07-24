@@ -170,9 +170,9 @@ MOBILE/BURGER CSS
   padding: 2.5vh 0 2vh 0;
   font-weight: bold;
   text-align: right;
-  font-family: var(--secondary-non-serif-font);
-  /* font-family: var(--primary-serif-font); */
-  font-size: 1.2rem;
+  font-family: var(--primary-serif-font);
+  /* font-family: var(--secondary-non-serif-font); */
+  font-size: 1.35rem;
   /* text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: var(--primary-text-color) */
@@ -182,18 +182,18 @@ MOBILE/BURGER CSS
   font-size: 1.1rem;
 }
 
-.essay-summary {
+/* .essay-summary {
   padding-bottom: 4vh;
-}
+} */
 
-/* .essay-date {
+.essay-date {
   text-align: right;
   font-family: var(--primary-serif-font);
   font-style: italic;
   padding: 2vh 0 2.5vh 0;
 }
 
-.essay-date-styling {
+/* .essay-date-styling {
   font-style: normal;
 } */
 
@@ -212,7 +212,7 @@ MOBILE/BURGER CSS
 }
 
 .essay-section:hover .essay-summary { /* apply X to essay-summ. when hover over essay-sect. */
-  padding: 0 30px 4vh 30px;
+  padding: 0 30px 0 30px;
 }
 
 .essay-summary { /* applied on hover */

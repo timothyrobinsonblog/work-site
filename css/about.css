@@ -151,9 +151,9 @@ MOBILE/BURGER CSS
 
 .picture {
   width: 100%;
-  border-top: 2px solid var(--primary-text-color);
-  border-bottom: 2px solid var(--primary-text-color);
-  margin-bottom: 3vh;
+  /* border-top: 1px solid var(--primary-text-color);
+  border-bottom: 1px solid var(--primary-text-color); */
+  margin-bottom: 2.75vh;
 } 
 
 .picture img {

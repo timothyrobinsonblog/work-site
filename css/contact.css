@@ -157,12 +157,21 @@ MOBILE/BURGER CSS
 .text-link {
   color: var(--primary-text-color);
   /* color: black; */
+  font-family: var(--secondary-non-serif-font);
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  font-style: italic;
+  text-underline-offset: 3px;
 }
 
 .text-link:hover {
   background-color: var(--primary-text-color);
   color: var(--secondary-text-color);
   /* color: gray; */
+}
+
+.text-styling {
+  font-family: var(--primary-monospace-font);
 }
 
 /*==============================
@@ -322,38 +331,3 @@ MOBILE/BURGER CSS
     font-size: 1.5rem;
   }
 }
-
-
-
-
-/* 
-TO DO:    
-
-> BASICALLY: write stuff, test. DONE!!
-
-- test on phone, make UI changes for phone, especially papers/tech pages
-- write proper stuff for site
-- edit photo properly
-- test/changes.rtf file
-- GH push
-- done
-- can put on linkedin/cv/application/github
-
-DONE:
-- Contact page template: html css
-- copy across:
-    > Writing: html css
-    > about: html css
-- finish changes on writing page:
-    > compare to contact: html css
-    > check changes: html css
-    > quick look at site in browser
-- push to GH
-- link to timothyrobinson.io
-- make copy of writing page, edit for tech projects
-    > copy wrtiing across:
-    > Tech: html css
-- get copies of 3 papers
-- testing on mobile
-
-*/

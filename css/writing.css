@@ -170,9 +170,9 @@ MOBILE/BURGER CSS
   padding: 2.5vh 0 2vh 0;
   font-weight: bold;
   text-align: right;
-  font-family: var(--secondary-non-serif-font);
-  /* font-family: var(--primary-serif-font); */
-  font-size: 1.2rem;
+  font-family: var(--primary-serif-font);
+  /* font-family: var(--secondary-non-serif-font); */
+  font-size: 1.35rem;
   /* text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: var(--primary-text-color) */
@@ -189,9 +189,9 @@ MOBILE/BURGER CSS
   padding: 2vh 0 2.5vh 0;
 }
 
-.essay-date-styling {
+/* .essay-date-styling {
   font-style: normal;
-}
+} */
 
 .essay-section a {
   text-decoration: none;
