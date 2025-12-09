@@ -1,0 +1,343 @@
+/* __________________________________________________-\ variables & container: ________________________________________________________________________________________________________________________ */
+
+:root {
+  /* Colours: */
+  --primary-text-color: #7D8590;
+  --secondary-text-color: #0D1117;
+  /* Fonts: */
+  --primary-serif-font: Palatino;
+  /* --primary-serif-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  /* --primary-serif-font: Georgia; */
+  /* font-family: Garamond; */
+  /* font-family: Georgia, "Times New Roman", serif; */
+  --primary-non-serif-font: Helvetica;
+  --secondary-non-serif-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* --secondary-non-serif-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  --primary-monospace-font: 'Courier New', Courier, monospace;
+}
+ 
+html {
+  background: #0D1117;
+  /* background: #fdf2e0; */
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1500px;
+  margin-top: 5vh;
+  font-family: var(--primary-non-serif-font);
+  /* font-family: var(--primary-serif-font); */
+  color: var(--primary-text-color);
+  display: flex;
+}
+
+/*==============================
+  NAVIGATION BAR
+  ==============================*/
+.space-left {
+  width: 20%;
+  flex-direction: column;
+}
+
+.nav-container {
+  float: right;
+  margin: 0 20% 0 2vw;
+}
+
+.nav-logo {
+  font-family: var(--primary-serif-font);
+  font-size: calc(1.375rem + 0.2vw); /* Scalable with min size of 22px. Used to be 26px. */
+  margin-bottom: 7vh;
+  /* border-bottom: 0.5px solid var(--primary-text-color); */  
+}
+
+.nav-logo a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  list-style: none;
+  padding: 1.5% 0 1.5% 0;
+  border-bottom: 0.5px solid var(--primary-text-color);
+}
+
+.nav-links li:first-of-type {
+  border-top: 0.5px solid var(--primary-text-color);
+}
+
+.nav-links-text {
+  color: var(--primary-text-color);
+  /* color: black; */
+  text-decoration: none;
+  font-size: 1.2rem;
+  /* font-size: 0.875rem; */
+  font-family: var(--primary-monospace-font);
+  /* font-family: var(--primary-serif-font); */
+}
+
+.nav-links-text:hover {
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  /* font-weight: bold; */
+}
+
+/* #current-page {
+  border-bottom: 1px solid #000;
+  padding-bottom: 1px;
+}
+
+#current-page:hover {
+  font-weight: normal;
+} */
+
+.social {
+  color: var(--primary-text-color);
+  /* color: black; */
+  padding-top: 2vh;
+  font-size: 1.5rem;
+}
+
+/*==============================
+MOBILE/BURGER CSS
+===============================*/
+.mobile-header {
+  display: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: var(--primary-text-color);
+  /* background-color: black; */
+  margin: 5px;
+  transition: all 0.3s ease-in;
+}
+
+/*==============================
+  MAIN CONTENT
+==============================*/
+.main-container {
+  width: 60%;
+  text-align: justify;
+}
+
+.title {
+  font-size: 1.75rem;
+  /* font-size: 1.25rem; */
+  margin-bottom: 3vh;
+  border-bottom: 1px solid var(--primary-text-color);
+  /* border-bottom: 0.5px solid var(--primary-text-color); */
+  padding-bottom: 7px;
+  text-align: right;
+  /* font-family: var(--primary-non-serif-font); */
+  /* font-family: var(--primary-monospace-font); */
+}
+
+.picture {
+  width: 100%;
+  /* border-top: 1px solid var(--primary-text-color);
+  border-bottom: 1px solid var(--primary-text-color); */
+  margin-bottom: 2.75vh;
+} 
+
+.picture img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  /* margin: 5px 5px 0; */
+}
+
+.text {
+  font-size: 1.2rem;
+  /* font-size: 1rem; */
+}
+
+.text-link {
+  color: var(--primary-text-color);
+  /* color: black; */
+}
+
+.text-link:hover {
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  /* color: gray; */
+}
+
+/*==============================
+  EMPTY SPACE ON THE RIGHT
+==============================*/
+.space-right {
+  width: 20%;
+}
+
+/*==============================
+  RESPONSIVE DESIGN: TABLET
+==============================*/
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 13px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .space-left {
+    width: 0%;
+  }
+
+  .main-container {
+    width: 100%;
+    margin: 1vh 2vh 2vh 2vh;
+  }
+
+  .space-right {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    font-size: 1.625rem;
+    justify-content: space-between;
+    border-bottom: 0.5px solid var(--primary-text-color);
+    /* border-bottom: 1px solid #000; */
+    padding-bottom: 5px;
+    font-family: var(--primary-serif-font);
+  }
+
+  .mobile-header a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+  }
+
+  .title {
+    padding: 1.5vh 0 1.5vh 0;
+    border-bottom: 0.5px solid var(--primary-text-color);
+  }
+
+  /*==============================
+  RESPONSIVE MOBILE/BURGER
+==============================*/
+  .burger {
+    display: block;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    top: 0;
+    background: var(--secondary-text-color);
+    /* background-color: #a51f26; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    /* opacity: 0.95; */
+  }
+
+  .nav-links li {
+    opacity: 1;
+    border-bottom: none;
+  }
+
+  .nav-links li:first-of-type {
+    border-top: none;
+  }
+
+  .nav-links-text {
+    font-size: 3.75rem;
+    color: var(--primary-text-color);
+    font-family: var(--primary-non-serif-font);
+    /* font-family: var(--secondary-non-serif-font); */
+    /* color: #fff9e5; */
+  }
+
+  #current-page {
+    border-bottom: 2px solid #fff9e5;
+    padding-bottom: 1px;
+  }
+
+  .social {
+    /* color: #fff9e5; */
+    padding: 2% 0 5vh 0;
+    font-size: 3.75rem;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background: var(--primary-text-color);
+    /* background-color: #fff9e5; */
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background: var(--primary-text-color);
+    /* background-color: #fff9e5; */
+  }
+}
+
+/*==============================
+  RESPONSIVE DESIGN: PHONE
+==============================*/
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+    margin-top: 4vh;
+  }
+
+  .main-container {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .title {
+    text-align: center;
+    font-family: var(--secondary-non-serif-font);
+    font-weight: bold;
+  }
+
+  /* .picture {
+    width: 84%;
+    padding: 0 8% 0 8%;
+  } */
+
+  .text {
+    padding: 0;
+    /* padding: 0 8% 0 8%; */
+    font-size: 1.5rem;
+  }
+}
