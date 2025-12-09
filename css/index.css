@@ -47,7 +47,7 @@ main {
 }
 
 .text-accent-primary {
-    font-size: 2.75rem;
+    font-size: 2.9rem;
     /* transition: color 1s ease; */ /* JS effects */
 }
 
@@ -73,6 +73,9 @@ main {
 
 /* __________________________________________________-\ RESPONSIVE design: phone: ________________________________________________________________________________________________________________________ */
 
-/* html {
-    font-size: 14px;
-} */
+@media screen and (max-width: 576px) {
+    .branding {
+        font-size: 2.75rem;
+        color: purple;
+    }
+}
