@@ -28,7 +28,7 @@ html {
 }
 
 main {
-    padding: 1vh 2vw 0 2vw;       
+    padding: 1vh 2vw 0 2vw;
 }
 
 .text-accent-secondary {
@@ -74,13 +74,12 @@ main {
 /* __________________________________________________-\ RESPONSIVE design: phone: ________________________________________________________________________________________________________________________ */
 
 @media screen and (max-width: 576px) {
-    /* main {
-       
-      } */
+    main {
+        padding: 3vh 2vw 0 2vw;
+      }
       
     
     .branding {
         font-size: 2.5rem;
-        /* color: purple; */
     }
 }
