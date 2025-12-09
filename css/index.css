@@ -74,8 +74,14 @@ main {
 /* __________________________________________________-\ RESPONSIVE design: phone: ________________________________________________________________________________________________________________________ */
 
 @media screen and (max-width: 576px) {
+    main {
+        display: flex;
+        align-items: center;   /* vertical centre */
+      }
+      
+    
     .branding {
-        font-size: 2.75rem;
-        color: purple;
+        font-size: 2.5rem;
+        /* color: purple; */
     }
 }
