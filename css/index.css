@@ -74,10 +74,9 @@ main {
 /* __________________________________________________-\ RESPONSIVE design: phone: ________________________________________________________________________________________________________________________ */
 
 @media screen and (max-width: 576px) {
-    main {
-        display: flex;
-        align-items: center;   /* vertical centre */
-      }
+    /* main {
+       
+      } */
       
     
     .branding {
